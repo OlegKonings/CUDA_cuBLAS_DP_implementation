@@ -3,12 +3,13 @@ CUDA_cuBLAS_DP_implementation
 
 A conversion of a 64 bit Dynamic Programming problem to a Linear Algebra CUDA implementation.
 
-A serial CPU DP approach to the TopCoder problem 'CandyBox';
+A serial CPU DP approach and a CUDA cuBLAS approach to the TopCoder problem 'CandyBox';
 
 http://community.topcoder.com/stat?c=problem_statement&pm=10744&rd=14147&rm=&cr=22653720
 
-Wo ist die Liebe Deutschland?
-I see you Chicago!
+Wo ist die Liebe Deutschland?  
+
+I see you Chicago! 
 
 This problem has a number of ways it can be solved, and in this case the GPU version uses Linear Algebra (cuBLAS) to raise the probability Matrix to large powers (through exponentiating by squaring method). Since GPUs execel at Linear Algebra, this implementation runs much faster on the GPU than a striaght translation of the CPU DP implementation to the CUDA equivalent. A CPU Linear Algebra version would be much slower, so the faster DP CPU version was compared.
 
