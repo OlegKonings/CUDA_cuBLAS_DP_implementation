@@ -13,7 +13,7 @@ I see you Chicago!
 
 This problem has a number of ways it can be solved, and in this case the GPU version uses Linear Algebra (cuBLAS) to raise the probability Matrix to large powers (through exponentiating by squaring method). Since GPUs excel at Linear Algebra, this implementation runs much faster on the GPU than a straight translation of the CPU DP implementation to the CUDA equivalent. A CPU Linear Algebra version would be much slower, so the faster DP CPU version was compared.
 
-A relatively small test was used for now, and there was at least a 86x speedup overl CPU version, but as all variables get larger the relative difference in running time will be larger (favoring the GPU version).
+A relatively small test was used for now, and there was at least a 86x speedup over the CPU version, but as all variables get larger the relative difference in running time will be larger (favoring the GPU version).
 
 
 ____
@@ -29,7 +29,7 @@ ____
 
 NOTE: All CUDA GPU times include all device memsets, host-device memory copies and device-host memory copies.  
 
-Will create larger data sets for bigger tests, and this is just a beta version.  The CUDA implementation can be further optimized as well, but already solves the problem (including all memory ops and copies) in under 1 ms, so that is impressive.
+Will create larger data sets for bigger tests, and this is just the first beta version.  The CUDA implementation can be further optimized as well, but already solves the problem (including all memory ops and copies) in under 1 ms, so that is impressive.
    
 War gegen Python!
 
