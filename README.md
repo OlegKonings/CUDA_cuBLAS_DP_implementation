@@ -29,8 +29,9 @@ ____
 
 NOTE: All CUDA GPU times include all device memsets, host-device memory copies and device-host memory copies.  
 
-Will create larger data sets for bigger tests, and this is just a beta version.  The CUDA implementation can be further optimized as well, but already is completely done (including all memory ops and copies) in under 1 ms, so that is impressive.
-
+Will create larger data sets for bigger tests, and this is just a beta version.  The CUDA implementation can be further optimized as well, but already solves the problem (including all memory ops and copies) in under 1 ms, so that is impressive.
+   
+War gegen Python!
 
 ____
 
